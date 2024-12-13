@@ -1,0 +1,48 @@
+-- Task --
+The goal is to write a program in C# that connects via the GitHub API to the GitHub - lodash/lodash repository and gathers a couple of statistics for us.
+
+We would like the program to output statistics on how often each letter is present in the JavaScript/TypeScript files of the repository, in decreasing order.
+
+My approach to this task:
+
+-- STEP 1 --
+To connect to Github API, I can use the HttpClient class.
+
+-- STEP 2 --
+Next we declare the url to fetch repository information. All API call must include a User-Agent header, hence I declare with CSharpApp.
+
+User-Agent header identifies the user or application that is making the request.
+
+Request with no User-Agent header or invalid header will get 403 forbidden response.
+
+-- STEP 3 --
+Next I defined a personal access token field to be used as Authorization. Leave the field empty if there is no token. If enter invalid token it will return an 401 unauthorized error.
+
+The difference is, without token there is a rate limit of how many times the API request can be made.
+
+-- STEP 4 --
+After sending the request, we need to parse the response. Hence, I used the JArray.parse class from Newtonsoft.Json package to parse the response. JArray/JObject works the same, the difference is JArray represents ordered collection of values while JObject is key-value pairs.
+
+Notice I used the EnsureSuccessStatusCode() method to make sure a successful request call.
+
+-- STEP 5 --
+Now that I have intialized the httpclient to send the request and Json class to parse the response. I can move on to the next step which is accessing the repositories, locate javascript and typescript file and finally count how often each letter represent
+
+To count the final output of letters I can use a List<KeyValuePair> or Dictionary. In this case, I used a Dictionary because a Dictionary allows me to store the alphabet as Key and the exact number of occurence as int and the key used must be unique. List<KeyValuePair> can store duplicate value of keys which is not ideal for this scenario.
+
+-- STEP 6 --
+Next I created a method to access the files. In the repository, there could exist different types of files and I only wanted Javascript or Typescript.
+
+Therefore, I created a method called AccessDirectory and a for loop to parse all the response based on the name and type and handle them by only when the file is a js/ts file.
+
+Notice I also created a recursive method calling of AccessDirectory, this is to handle the situation when a directory is returned. When the program detect that it is a directory, it will call the method again to enter it's subdirectory in order to access the files in it.
+
+-- STEP 7 --
+When the file type is js/ts, I first collect the file by accessing the download_url content and parse them into the AccessFile method. This method will lookup into the content of the file and count the actual occurence of the letter.
+
+I used a foreach char loop and isLetter() method to go through every character and making sure it is a letter but not a decimal etc.
+
+To remain consistency, I used the ToLower() method to change all letter to small capital. Then add them accordingly to the dictionary.
+
+-- STEP 8 --
+The final step is to sort the dictionary to return the output in decreasing order. I used the built-in OrderByDescending() method to sort the letters count in descending order.

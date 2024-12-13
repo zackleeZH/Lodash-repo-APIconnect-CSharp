@@ -1,0 +1,17 @@
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/bin/Debug/net9.0/InfinitExercise
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/bin/Debug/net9.0/InfinitExercise.deps.json
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/bin/Debug/net9.0/InfinitExercise.runtimeconfig.json
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/bin/Debug/net9.0/InfinitExercise.dll
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/bin/Debug/net9.0/InfinitExercise.pdb
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/bin/Debug/net9.0/Newtonsoft.Json.dll
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/obj/Debug/net9.0/InfinitExercise.csproj.AssemblyReference.cache
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/obj/Debug/net9.0/InfinitExercise.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/obj/Debug/net9.0/InfinitExercise.AssemblyInfoInputs.cache
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/obj/Debug/net9.0/InfinitExercise.AssemblyInfo.cs
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/obj/Debug/net9.0/InfinitExercise.csproj.CoreCompileInputs.cache
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/obj/Debug/net9.0/InfinitE.F8D55D9C.Up2Date
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/obj/Debug/net9.0/InfinitExercise.dll
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/obj/Debug/net9.0/refint/InfinitExercise.dll
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/obj/Debug/net9.0/InfinitExercise.pdb
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/obj/Debug/net9.0/InfinitExercise.genruntimeconfig.cache
+/Users/leezhinghang/ConsoleApp1/InfinitExercise/obj/Debug/net9.0/ref/InfinitExercise.dll
